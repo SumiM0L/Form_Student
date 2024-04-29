@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Example</title>
+ 
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap" />
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="outer-container">
+
+   
+    <!-- <div class="logo-container">
+        <div> <img class="logo" alt="logo" src="./public/Logox.png" />
+        </div>
+     </div> -->
+     <!-- stepper logo-->
+
+     <div class="steps-icon">
+        <div class="logo-text"> <div class="img-container"><img class="logo" alt="logo" src="./public/Tour.png" /></div><p class="text-1">Tour Information</p></div>
+        <div class="logo-text"> <div class="img-container"><img class="logo" alt="logo" src="./public/student.png" /></div><p class="text-1">Student Information</p></div>
+        <div class="logo-text"><div class="img-container"> <img class="logo" alt="logo" src="./public/English.png" /></div><p class="text-1">Non English & <br/>Sibling Information</p></div>
+        <div class="logo-text"><div class="img-container"> <img class="logo" alt="logo" src="./public/germ.png" /></div><p class="text-1"> allergies or food <br/>intolerence</p></div>
+        <div class="logo-text"><div class="img-container"> <img class="logo" alt="logo" src="./public/Parents.png" /></div><p class="text-1">Parents <br/>Information</p></div>
+        </div>
+        <!-- stepper -->
+        
+        <div class="steppo">
+            <div class="progress-bar">
+              <div class="step-container">
+                <div class="step completed">
+                  <input type="radio" id="step1-radio" name="step-radio" checked>
+                  <label for="step1-radio">1</label>
+                </div>
+                <div class="line"></div>
+                <div class="step">
+                  <input type="radio" id="step2-radio" name="step-radio">
+                  <label for="step2-radio">2</label>
+                </div>
+                <div class="line"></div>
+                <div class="step">
+                    <input type="radio" id="step3-radio" name="step-radio">
+                    <label for="step3-radio">3</label>
+                  </div>
+                  <div class="line"></div>
+                  <div class="step">
+                    <input type="radio" id="step4-radio" name="step-radio">
+                    <label for="step4-radio">4</label>
+                  </div>
+                  <div class="line"></div>
+                  <div class="step">
+                    <input type="radio" id="step5-radio" name="step-radio">
+                    <label for="step5-radio">5</label>
+                  </div>
+              </div>
+            </div>
+        
+            <div class="tab" id="step1" style="display: block;">
+              <p class="text-step"><img  alt="logo" src="./public/Tour.png" />Tour Information</p>
+              <div class="eachbox">
+                <label class="textsub">Tour by</label>
+                <input type="text" class="inp-box" value="e.g Southe" required/>
+              </div>
+              <div class="eachbox">
+                <label class="textsub">Tour time</label>
+                <input type="text" class="inp-box" value="e.g 2:30 PM" required/>
+              </div>
+              <div class="eachbox">
+                <label class="textsub">Tour day</label>
+                <input type="text" class="inp-box" value="e.g. Monday" required/>
+              </div>
+            </div>
+        
+            <div class="tab" id="step2" style="display: none;">
+              <p class="text-step"><img  alt="logo" src="./public/student.png" />Student Information</p>
+              <!-- Add Step 2 content here -->
+              <div class="wider100"> 
+                <div class="eachbox">
+                    <label class="textsub"> First Name</label>
+                    <input type="text" class="inp-box" value="e.g faizan" required/>
+                </div>
+            
+                <div class="eachbox">
+                    <label class="textsub"> First Name Family Name/Surname</label>
+                    <input type="text" class="inp-box" value="e.g ali" required/>
+                </div>
+            
+              </div>
+            
+              <div class="wider100"> 
+                <div class="eachbox">
+                    <label class="textsub"> Date of Birth: DD/MM/YY</label>
+                    <input type="date" class="inp-box" value="e.g 23/03/2023" required/>
+                </div>
+            
+                <div class="eachbox">
+                    <span class="textsub">Gender</span>
+                    <div class="gender">
+                    <input type="checkbox" id="male" name="gender" value="male">
+                    <label for="male" class="textsub2">Male</label>
+                    
+                    <input type="checkbox" id="female" name="gender" value="female">
+                    <label for="female" class="textsub2">Female</label>
+                </div>
+                </div>
+            
+              </div>
+            
+              <div class="wider100"> 
+                <div class="eachbox">
+                    <label class="textsub"> Current Year/Grade</label>
+                    <input type="date" class="inp-box" value="e.g 23/03/2023" required/>
+                </div>
+            
+                <div class="eachbox">
+                    <label class="textsub"> Current School</label>
+                    <input type="text" class="inp-box" value="e.g scholname" required/>
+                </div>
+            
+              </div>
+            
+              <div class="wider100"> 
+                <div class="eachbox">
+                    <label class="textsub"> Grade Applying for</label>
+                    <input type="text" class="inp-box" value="e.g faizan" required/>
+                </div>
+            
+                <div class="eachbox">
+                    <label class="textsub"> Academic Year</label>
+                    <input type="date" class="inp-box" value="e.g 23/03/2023" required/>
+                </div>
+            
+              </div>
+            
+              <div class="wider100"> 
+                <div class="eachbox">
+                    <label class="textsub">Nationality</label>
+                    <input type="text" class="inp-box" value="e.g Pakistan" required/>
+                </div>
+            
+                <div class="eachbox">
+                    <label class="textsub">Religion</label>
+                    <input type="text" class="inp-box" value="e.g Islam" required/>
+                </div>
+               
+            
+              </div>
+              
+              <div  class="eachx">
+                <label class="textsub">Curriculam of current school</label>
+                <input type="textarea" class="inp-box" value="e.g maths" required/>
+            </div>
+            </div>
+
+           
+             
+            
+              
+             
+              
+            
+            </div>
+        
+            <div class="tab" id="step3" style="display: none;">
+              <p class="text-step"> <img alt="logo" src="./public/English.png" /> Non English & Sibling Information</p>
+              <!-- Add Step 3 content here -->
+              <div  class="eachx">
+                <label class="textsub">Mother tongue</label>
+                <input type="textarea" class="inp-box" value="e.g Arabic" required/>
+                <div class="parent" style="display: flex;">
+                 
+                    <div class="eachbox">
+                        <span class="textsub">Secondary Language (KG2 Onwards):
+                        <div class="gender">
+                            <input type="checkbox" id="male" name="gender" value="male">
+                            <label for="male" class="textsub2"> French</label>
+                            
+                            <input type="checkbox" id="female" name="gender" value="female">
+                            <label for="female" class="textsub2">Spanish</label>
+                        </div>
+                    </div>
+                
+                    <div class="eachbox" style="display: flex;">
+                        <span class="textsub">Is English Used at Home?</span>
+                        <div class="gender">
+                            <input type="checkbox" id="male2" name="gender2" value="male">
+                            <label for="male2" class="textsub2"> Yes</label>
+                            
+                            <input type="checkbox" id="female2" name="gender2" value="female">
+                            <label for="female2" class="textsub2">No</label>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            </div>
+        
+            <div class="tab" id="step4" style="display: none;">
+              <p class="text-step"><img  alt="logo" src="./public/germ.png" /> Allergies or Food Intolerance</p>
+              <!-- Add Step 4 content here -->
+              
+            </div>
+        
+            <div class="tab" id="step5" style="display: none;">
+              <p class="text-step"><img alt="logo" src="./public/Parents.png" /> Parents Information</p>
+              <!-- Add Step 5 content here -->
+            </div>
+        
+            <div class="button-class"      style="overflow:auto;">
+              <div style="float:right;">
+                <button  class="prev-button" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+             
+              </div>
+              <div>   <button class="next-button"   type="button" id="nextBtn" onclick="nextPrev(1)">Next</button></div>
+            </div>
+          </div>
+    
+    </div>
+
+  </div>
+  <script>
+    let currentStep = 1;
+
+    function showStep(step) {
+      document.getElementById(`step${currentStep}`).style.display = 'none';
+      currentStep = step;
+      document.getElementById(`step${currentStep}`).style.display = 'block';
+      updateProgressBar(currentStep);
+    }
+
+    function nextPrev(n) {
+      if (n === 1 && currentStep < 5) {
+        showStep(currentStep + 1);
+      } else if (n === -1 && currentStep > 1) {
+        showStep(currentStep - 1);
+      }
+    }
+
+    function updateProgressBar(step) {
+      const steps = document.querySelectorAll('.step');
+      steps.forEach((s, index) => {
+        if (index < step) {
+          s.classList.add('completed');
+        } else {
+          s.classList.remove('completed');
+        }
+      });
+    }
+
+    // Initially show the first step
+    showStep(currentStep);
+    </script>
+</body>
+
+</html>

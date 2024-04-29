@@ -1,0 +1,300 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    /* Remove align-items: flex-start; */
+    min-height: 100vh;
+}
+
+.main-container {
+    background-color: #007bff; 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the content vertically */
+}
+
+.outer-container {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: lightskyblue;
+    width: 80%;
+   
+    height: auto;
+    border-radius: 12px;
+}
+
+.logo-container {
+    background-color: aliceblue;
+    width: 100%;
+    height: 30%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.steps-icon {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 80px; 
+    width: 100%;
+    margin-top: 30px;
+}
+.logo-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.logo{
+    margin: 10px;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+}
+.img-container{
+    width: 50px;
+    height: 50px;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-1{
+   
+    font-size: 16px;
+    font-family:  Inter;
+    font-weight: 600;
+   
+}
+/* stepper */
+.steppo {
+    width: 100%;
+   
+    margin: 0 auto;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    /* border-radius: 5px; */
+  }
+
+  .progress-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+  }
+.text-step{
+    font-size: 16px;
+    font-family:  Inter;
+    font-weight: 600;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px
+}
+  .step-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+  .step {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 5px; /* Adjust spacing between radio buttons and lines */
+  }
+
+  .step label {
+    display: none; /* Hide the label text */
+  }
+
+  .step.completed {
+    background-color: #007bff;
+  }
+
+  .line {
+   width: 200px;
+    height: 2px;
+    background-color: white;
+  }
+
+  .tab {
+    display: none;
+  }
+
+
+  .container{
+    background-color: #3A83F7;
+    height: fit-content;
+    padding-bottom: 60px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+.form-body{
+    background-color: #559AF1 ;
+    height: fit-content;
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 15px;
+
+}
+.banner{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DEEBFD;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.banner-img{
+    width: 180px;
+    height: 70px;
+}
+.stepper{
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+  
+}
+.heading{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DCEAFB;
+
+}
+.head-img{
+    width: 170px;
+    height: 30px;
+}
+.textsub{
+    font-size: 12px;
+    color: #364052;
+    margin-bottom: 8px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+.eachbox{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 30%;
+    margin: 10px auto;
+    
+}
+.inp-box{
+    color: #364052;
+    width: 100%;
+    height: 35px;
+    border: none;
+    box-shadow: none;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.btn-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    height: 35px;
+    border: none;
+    box-shadow: none;
+    border-radius: 10px;
+    margin-bottom: 50px;
+
+}
+.btn-form:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(8, 61, 8);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    
+}
+.button-class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.prev-button ,.next-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    height: 35px;
+    border: none;
+    box-shadow: none;
+    border-radius: 10px;
+   
+
+}
+/* second page */
+
+.wider100{
+    width: 100%;
+    height: 90px;
+    
+   
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gender{
+    display: flex;
+}
+
+.eachx{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 80%;
+    margin: 10px 122px;
+    
+}
